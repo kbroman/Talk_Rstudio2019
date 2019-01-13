@@ -4,7 +4,7 @@
 These are slides for a talk that I will give at the
 [rstudio::conf](http://www.cvent.com/events/rstudio-conf-austin/event-summary-dd6d75526f3c4554b67c4de32aeffb47.aspx) on 17 January 2019.
 
-PDF of slides at <tbd>.
+PDF of slides at [bit.ly/rstudio2019](https://bit.ly/rstudio2019).
 
 ---
 
