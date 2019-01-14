@@ -204,6 +204,37 @@ n.phe <- max((1:n)[temp])
 
 \end{frame}
 
+\begin{frame}[c]{Baroque data structures}
+
+  \large
+      {\tt attr(mycross\$geno[["X"]]\$probs, "map")}
+
+\end{frame}
+
+
+
+\begin{frame}[c]{Inconsistencies}
+
+  \large
+      {\tt plotPXG(mycross, marker="D5M250")}
+
+      \bigskip
+
+      {\tt effectplot(mycross, mname1="D5M250")}
+
+
+\end{frame}
+
+
+\begin{frame}[c]{Useless warning messages}
+
+  \large
+      {\tt X'X is singular.}
+
+\end{frame}
+
+
+
 
 \begin{frame}[c]{Tests}
 \end{frame}
@@ -250,35 +281,57 @@ you are the tests.
 \end{frame}
 
 
-\begin{frame}[c]{Baroque data structures}
+
+\begin{frame}{How did this happen?}
+
+  \bbi
+\item I didn't know any better
+\item Not enough re-writing
+\item Not enough planning
+\item Personal weaknesses
+\item Trade-offs (e.g. between interface and data structures)
+  \ei
+
+\end{frame}
+
+
+
+
+\begin{frame}{Documentation}
+
+\bigskip \bigskip
 
   \large
-      {\tt attr(mycross\$geno[["X"]]\$probs, "map")}
 
+  Tailored tutorials $\boldsymbol{\vhilit >}$
+
+\bigskip
+
+  \hspace{8mm} General user guide $\boldsymbol{\vhilit >}$
+
+\bigskip
+
+  \hspace{16mm} Examples in documentation $\boldsymbol{\vhilit >}$
+
+\bigskip
+
+  \hspace{24mm} Formal documentation
+
+\end{frame}
+
+
+
+\begin{frame}{User support}
+
+  \bbi
+\item No question is too insignificant
+\item Take a breath
+\item Treat each question like it is the first
+\item ``Send me your data, and I'll try to figure out what's going on.''
+  \ei
 
 \end{frame}
 
-
-
-
-
-\begin{frame}{}
-
-\vspace*{16.7mm}
-
-\centerline{\Large Documentation}
-
-\end{frame}
-
-
-
-\begin{frame}{}
-
-\vspace*{16.7mm}
-
-\centerline{\Large User support}
-
-\end{frame}
 
 
 
