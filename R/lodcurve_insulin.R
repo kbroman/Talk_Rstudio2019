@@ -52,7 +52,7 @@ par(mar=c(5.1,4.1,0.1,0.1))
 plot(out, col=color[1], ylab="LOD score")
 abline(h=quantile(operm, 0.95), lty=2, col=color[2])
 yd <- 1
-xl <- xaxisloc.scanone(out, c(4,8), c(0,0))
+xl <- xaxisloc.scanone(out, c(4,7), c(0,0))
 yl <- c(max(out, chr=5:7)[,3]+yd, par("usr")[4]-yd*0.1)
 mx <- max(out)
 mx.x <- xaxisloc.scanone(out, mx[[1]], mx[[2]])
@@ -62,7 +62,7 @@ for(y in yl)
 xat <- seq(xl[1], xl[2], len=7)[c(2,4,6)]
 for(x in xat)
     segments(x, yl[1], x, yl[2], lwd=5, col=ifelse(bw, "gray90", "gray20"), lend=1, ljoin=1)
-text(xat, rep(yl[1]-yd*0.3, length(xat)), names(me))
+text(xat, rep(yl[1]-yd*0.35, length(xat)), names(me))
 
 library(scales)
 yaxlab <- yax <- pretty(range(ci))
@@ -77,7 +77,7 @@ xw <- diff(xat)[1]
 
 for(y in yax)
   segments(xl[1], y, xl[2], y, col=ifelse(bw, "gray40", "gray40"), lend=1, ljoin=1)
-text(xl[2]+xw*0.05, yax, myround(yaxlab, 1), adj=c(0, 0.5), cex=0.8)
+text(xl[2]+xw*0.12, yax, myround(yaxlab, 1), adj=c(0, 0.5), cex=0.8)
 
 rect(xl[1], yl[1], xl[2], yl[2], border=fgcolor)
 
