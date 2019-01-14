@@ -9,7 +9,9 @@ FIGS = Figs/scale_fig1.pdf \
 	   Figs/congenic.pdf \
 	   Figs/lodcurve_insulin_with_effects.pdf \
 	   Figs/data_fig.png \
-	   Figs/intercross.pdf
+	   Figs/intercross.pdf \
+	   Figs/ail.pdf \
+	   Figs/hs.pdf
 
 $(STEM).pdf: $(STEM).tex header.tex $(FIGS)
 	xelatex $<
@@ -42,4 +44,10 @@ Figs/data_fig.png: R/data_fig.R
 	cd $(<D);R $(R_OPTS) -e "source('$(<F)')"
 
 Figs/intercross.pdf: R/intercross.R
+	cd $(<D);R $(R_OPTS) -e "source('$(<F)')"
+
+Figs/ail.pdf: R/ail_fig.R
+	cd $(<D);R $(R_OPTS) -e "source('$(<F)')"
+
+Figs/hs.pdf: R/hs_fig.R
 	cd $(<D);R $(R_OPTS) -e "source('$(<F)')"
