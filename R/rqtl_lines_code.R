@@ -10,8 +10,8 @@ lines <- lines[nrow(lines):1,]
 library(lubridate)
 lines[,2] <- dmy(as.character(lines[,2]))
 
-pdf("../Figs/rqtl_lines_code.pdf", width=10, height=6.5, pointsize=18)
-par(mar=c(3.6, 5.1, 2.3, 0.1),las=1,fg="white",col="white",col.axis="white",col.lab="lightblue",
+pdf("../Figs/rqtl_lines_code.pdf", width=9.75, height=5, pointsize=14)
+par(mar=c(3.1, 5.1, 1.6, 0.1),las=1,fg="white",col="white",col.axis="white",col.lab="lightblue",
     bg=bgcolor,bty="n")
 
 yat <- seq(0, 40000, by=5000)
@@ -67,8 +67,8 @@ dev.off()
 
 ### Add arrow at CTC 1
 
-pdf("../Figs/rqtl_lines_code2.pdf", width=10, height=6.5, pointsize=18)
-par(mar=c(3.6, 5.1, 2.3, 0.1),las=1,fg="white",col="white",col.axis="white",col.lab="lightblue",
+pdf("../Figs/rqtl_lines_code2.pdf", width=9.75, height=5, pointsize=14)
+par(mar=c(3.1, 5.1, 1.6, 0.1),las=1,fg="white",col="white",col.axis="white",col.lab="lightblue",
     bg=bgcolor,bty="n")
 
 yat <- seq(0, 40000, by=5000)
