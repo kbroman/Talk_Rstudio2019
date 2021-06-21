@@ -6,6 +6,8 @@ These are slides for a talk that I gave at the
 
 PDF of slides at [bit.ly/rstudio2019](https://bit.ly/rstudio2019).
 
+Video at [youtube](https://resources.rstudio.com/rstudio-conf-2019/r-qtl2-rewrite-of-a-very-old-r-package).
+
 ---
 
 To the extent possible under law,
